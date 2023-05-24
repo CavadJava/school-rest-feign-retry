@@ -12,9 +12,3 @@ server:
 client:
   feign:
     base-url: http://localhost:3000
-    connection-timeout-millis: 20000
-    read-timeout-millis: 5000
-    retry:
-      period-millis: 3000
-      max-period-millis: 3000
-      attempts: 1

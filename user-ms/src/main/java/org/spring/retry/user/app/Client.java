@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 @FeignClient(
         name = "user-api",
         url = "${client.feign.base-url}",
-        configuration = UserClientConfiguration.class)
+        configuration = CustomRetryer.class)
 public interface Client {
 
     @GetMapping("/check-health")
